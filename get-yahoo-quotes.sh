@@ -49,7 +49,7 @@ function getCrumb () {
   # grep for the CrumbStore line
   # then copy out the value
   # lastly, remove any quotes
-  echo -en "$(curl -s --cookie-jar $cookieJar $1)" | Tr "}" "\n" | grep CrumbStore | cut -d':' -f 3 | sed 's+"++g'
+  echo -en "$(curl -s --cookie-jar $cookieJar $1)" | tr "}" "\n" | grep CrumbStore | cut -d':' -f 3 | sed 's+"++g'
 }
 
 # TODO If crumb is blank then we probably don't have a valid symbol
