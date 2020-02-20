@@ -116,3 +116,4 @@ write_output = True
 
 d = download_stock_data()
 csv = d.get_data(ticker, 240, write_output)
+print(csv)
