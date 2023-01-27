@@ -75,4 +75,4 @@ log "URL: $URL"
 # Download to
 curl -s --cookie $cookieJar  $URL > $SYMBOL.csv
 
-echo "Data dowmloaded to $SYMBOL.csv"
+echo "Data downloaded to $SYMBOL.csv"
